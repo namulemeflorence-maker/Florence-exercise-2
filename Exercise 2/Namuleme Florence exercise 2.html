@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Designing classes</title>
+<link rel="stylesheet" href="Namuleme exercise 2.css">
+<body>
+  <header id="main-header">
+    <p>Different Selectors in CSS</p>
+  </header>
+<h2>Element Selectors</h2>
+<section>
+<p class="highlight"> selectors target HTML tags by name.
+Use them when you want the same style for every instance of an HTML tag.<br>Example sentence for the page</p>
+</section>
+“Element selectors apply CSS rules to all elements of a given HTML tag. For example, the selector p styles every paragraph on the page.”</p>
+<p>Descendant selectors</p>
+<p>A descendant selector is used in CSS to style elements that are inside (nested within) other elements</p>
+<main>
+    <section class="article">
+      <h3>Article Section</h3>
+      <p>This paragraph is inside the section with class "article".</h3>
+      <div class="box">
+        <p><span>This paragraph is inside a div, which is inside the article section</span>.</p>
+      </div>
+    </section >
+    <p>This paragraph is outside the section and will not be styled by the descendant selector.</p>
+  </main>
+  <section>
+  <div>
+    <p>This paragraph is about parent-child descendent selectors"section p".</p>
+  </div>
+  <p>This paragraph is also inside section.</p>
+</section>
+<section id="mercy">
+  <div>
+    <div>
+      <p>This paragraph is styled with "section div div p".</p>
+    </div>
+  </div>
+</section>
+<p> Attribute Selectors</p>
+<p>Attribute selectors style elements that have a certain attribute or a specific attribute value.<br>
+Syntax varies depending on what you want to select.</p>
+<main>
+    <p>The selector <code>[placeholder]</code> selects all elements that have a <strong>placeholder</strong> attribute, regardless of its value.</p>
+    <input type="text" placeholder="StudentName">
+    <input type="email" placeholder=" Email">
+    <input placeholder="Reg no">
+  </main>
+  <main>
+    <p>The selector <code>[type="email"]</code> selects all elements whose attribute exactly matches the value.</p>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+  </main> 
+<footer class="footer">
+    <p>Created by: Your Name | Designing Selectors</p>
+  </footer>
+</body>
+</html>
